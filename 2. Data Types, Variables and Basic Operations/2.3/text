@@ -1,0 +1,82 @@
+public class text {
+  public static void main(String[] args) {
+    char letter = 'A';
+    char digit = '5';
+    char symbol = '@';
+    char space = ' ';
+
+    System.out.println("Letter: "+letter);
+    System.out.println("Digit: "+digit);
+    System.out.println("Symbol: "+symbol);
+    System.out.println("Space: "+space);
+
+    // Characters are actually numbers
+    System.out.println("ASCII value of A: "+(int)letter);
+    System.out.println("ASCII value of digit: "+(int)digit);
+
+    // Creating chars from numbers
+    char charFromNumber = 65;
+    System.out.println("Character from 65: "+charFromNumber);
+
+    // Character operations
+    char nextletter = (char)(letter + 1);
+    System.out.println("Next letter: "+nextletter);
+
+    // ===================================== STRING OPERATIONS ==============================================
+
+    String firstName = "Kumarr";
+    String lastName = "Ravi";
+    String emptyString = "";
+
+    System.out.println("First Name: "+firstName);
+    System.out.println("last Name: "+lastName);
+
+    System.out.println("Length of first name: "+firstName.length());
+    System.out.println("Is emptystring: "+emptyString.isEmpty());
+
+    // String with num and special chars
+    String address = "139, St. louis road, Mumbai";
+    String phoneNumber = "(+91) 85245-78953";
+    String message = "hell yeah!";
+
+    System.out.println("Address :"+address);
+    System.out.println("Phone Number :"+phoneNumber);
+    System.out.println("Message :"+message);
+
+    // Case Conversion
+    System.out.println("Address in Uppercase :"+address.toUpperCase());
+    System.out.println("Address in Lowercase :"+address.toLowerCase());
+
+    // Character access and searching
+    System.out.println("First Character: "+firstName.charAt(1));
+    System.out.println("Last Character: "+firstName.charAt(firstName.length() - 1));
+    System.out.println("Index of 'm': "+firstName.indexOf('m'));
+    System.out.println("Last index of 'r': "+firstName.lastIndexOf('r'));
+      
+    // Substring Extraction
+    System.out.println("Substring from index 3: "+firstName.substring(3));
+    System.out.println("Substring from index 3 to 4: "+firstName.substring(3, 5));
+
+    // String Cleaning and trimming
+    String cleanStr = " Hello, bunny!  ";
+    System.out.println("Messy: '" + cleanStr + "'");
+
+    System.out.println("Trimmed: "+cleanStr.trim());
+
+    // String comparison
+    String word1 = "apple";
+    String word2 = "Apple";
+    String word3 = "apple";
+
+    System.out.println("word1 equals word2? "+word1.equals(word2));
+    System.out.println("word1 equals word2? "+word1.equals(word3));
+    System.out.println("word1 equals word2? "+word1.equalsIgnoreCase(word2));
+
+    // Checking string contents
+    String email = "rav063@gmail.com";
+    System.out.println("Contains @? "+email.contains("@"));
+
+    
+
+  }  
+}
