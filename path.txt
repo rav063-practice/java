@@ -1,0 +1,1 @@
+set PATH="C:\Users\v1010916\java\jdk-version\jdk-24_windows-x64_bin\jdk-24.0.2\bin";%PATH%
