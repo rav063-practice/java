@@ -1,5 +1,23 @@
 public class escape_seq {
   public static void main(String[] args) {
+    System.out.println("Line 1\nLine 2");     // \n - newline
+    System.out.println("Column 1\tColumn 2");  // \t - tabspace
+    System.out.println("\"Hello\"");        // Double quotes
+    System.out.println("It's a nice day");  // single quote in double quote
+    System.out.println("C:\\User\\Ravi");   // single backslash
+    System.out.println("Ring the bell! \u0007");  // u = Unicode Character (bell)
+
+    // Creating Strings with multiple lines
+    String poem = "\n\nRoses are red,\n" +
+                  "Violets ki mia ka,\n" +
+                  "Java is lol\n";
+    System.out.println(poem);
     
+    // Backslash at end of the line (for very long strings)
+    String longString = "This is a very long string that " +
+    "continues on the next line " +
+    "for better readability";
+    System.out.println(longString);
+    System.out.println();
   }
 }
