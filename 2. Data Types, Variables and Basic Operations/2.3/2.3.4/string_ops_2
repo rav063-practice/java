@@ -1,0 +1,41 @@
+public class string_ops_2 {
+  public static void main(String[] args) {
+    String firstName = "Kumar";
+    String lastName = "Ravi";
+    int age = 23;
+    double salary = 50000.50;
+
+    // Using + operator
+    String fullName = firstName + " " + lastName;
+    String greeting = "Hello, " + firstName + "!";
+
+    System.out.println("Full name: "+fullName);
+    System.out.println("Greetings: "+greeting);
+
+
+    // Mixing String and Numbers
+    String info = "Name: " +firstName+ ", Age: " +age+ ", Salary: $" +salary;
+    System.out.println("Info: "+info);
+
+
+    // Using String.format() for formatted output - %s for string, %d for int, %f for float
+    String formatted = String.format("Name: %s, Age: %d, Salary: $%.2f", fullName, age, salary);
+    System.out.println("Formatted: "+formatted);
+
+
+    // Common format specifiers
+    int quantity = 5;
+    double price = 1232.45;
+    String product = "Table";
+
+    String receipt = String.format("Item: %s\nQuantity: %d\nPrice: %.2f\nTotal: %.2f", product, quantity, price, quantity * price);
+    System.out.println("\nReceipt:");
+    System.out.println(receipt);
+
+
+    // Use printf for direct formatting
+    System.out.printf("Temperature: %d F", 32);
+
+    
+  }
+}
