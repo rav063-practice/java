@@ -1,0 +1,45 @@
+public class data_types {
+  public static void main(String[] args) {
+    // 8 primitive data types
+
+    // INT -2,147,483,648 to 2,147,483,647
+    int temperature = 30;
+    System.out.println("Temperature: " + temperature + "°C");
+
+    // DOUBLE -1.7976931348623157E308 to 1.7976931348623157E308
+    double pi = 3.14159;
+    System.out.println("Value of Pi: " + pi);
+
+    // BOOLEAN false to true
+    boolean isWeekend = false;
+    System.out.println("Is it the weekend? " + isWeekend);
+
+    // CHAR 0 to 65535
+    char grade = 'B';
+    System.out.println("Grade: " + grade);
+
+    // BYTE -128 to 127
+    byte age = 30;
+    System.out.println("Age: " + age);
+
+    // SHORT -32768 to 32767
+    short year = 2023;
+    System.out.println("Year: " + year);
+
+    // LONG -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    long distance = 9876543210L;
+    System.out.println("Distance: " + distance + " meters");
+
+    // FLOAT -3.40282347E+38 to 3.40282347E+38
+    float gravity = 9.81f;
+    System.out.println("Gravity: " + gravity + " m/s²");
+
+
+
+
+
+
+
+
+  }
+}
