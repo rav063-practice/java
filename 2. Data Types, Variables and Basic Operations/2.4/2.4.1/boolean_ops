@@ -1,0 +1,15 @@
+public class boolean_ops {
+  public static void main(String[] args) {
+    boolean isRaining = true;
+    boolean isWeekend = true;
+
+    System.out.println("Is it raining? "+ isRaining);
+
+    // Boolean variables in conditions
+    if (isWeekend) {
+      System.out.println("holiday");
+    } else if (!isWeekend) {
+      System.out.println("Go to office");
+    }
+  }
+}
