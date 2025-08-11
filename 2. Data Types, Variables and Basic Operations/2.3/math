@@ -1,0 +1,67 @@
+import java.text.DecimalFormat;
+
+public class math {
+  public static void main(String[] args) {
+    double x = 16.5;
+    double y = -7.5;
+    double angle = 45.0;
+
+    // power and root functions
+    System.out.println("x^2 = "+Math.pow(x, 2));
+    System.out.println("Square root of x = "+Math.sqrt(x));
+    System.out.println("Cube root of x = "+Math.cbrt(x));
+
+    // Absolute value and rounding
+    System.out.println("Absolute value of y = "+Math.abs(y));   // Always returns a non-negative number with same decimals - same return type as input
+    System.out.println("Ceiling value of y = "+Math.ceil(y));   // "Ceil" stands for ceiling, which is the roof of a room—the highest level. return type - double
+    System.out.println("Floor value of y = "+Math.floor(y));    // "Floor" literally means the floor of a room—the lowest level.
+    System.out.println("Round value pf y = "+Math.round(y));    // Rounds to the nearest integer (0.5 rounds up).
+
+    // Trignometric Functions (angles in radians)
+    double radians = Math.toRadians(angle);
+    System.out.println("Sin of 45 degree = "+Math.sin(radians));
+
+    // Constants and other useful functions
+    System.out.println("pie = "+Math.PI);
+    System.out.println("e = "+Math.E);
+    System.out.println("Max "+Math.max(5, 8)); 
+    System.out.println("Min = "+Math.min(5, 8));
+
+    // Random numbers
+    System.out.println("Random number: "+Math.random());
+    System.out.println("Random number: "+(int)(Math.random() * 100 + 1));
+
+    // Using DecimalFormat for custom formatting
+    double price = 1234.567;
+    double percentage = 0.1234567;
+    long largeNumber = 12345678965011L;
+
+    DecimalFormat currency = new DecimalFormat("$#,###.##");
+    DecimalFormat percent = new DecimalFormat("###.##%");
+    DecimalFormat commas = new DecimalFormat("##,###,####");
+
+    System.out.println("Currency: "+currency.format(price));
+    System.out.println("Percentage: "+percent.format(percentage));
+    System.out.println("With commas: "+commas.format(largeNumber));
+
+    // Converting Numbers to Strings
+    String priceString = String.valueOf(price);
+    String intString = Integer.toString(42);
+
+    System.out.println("Price as string: "+priceString);
+    System.out.println("Int as string: "+intString);
+
+    // Parsing strings to numbers
+    String numberText = "123";
+    String decimalText = "123.45";
+
+    int parsedInt = Integer.parseInt(numberText);
+    double parsedDouble = Double.parseDouble(decimalText);
+
+    System.out.println("Parsed Int: "+parsedInt);
+    System.out.println("Parsed Double: "+parsedDouble);
+
+
+
+  }
+}
